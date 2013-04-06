@@ -9,12 +9,13 @@
               :distribution :repo
               :comments "Copyright (c) 2011-2012 Micah Martin All Rights Reserved."}
     :repositories {"releases" "http://gaeshi-mvn.googlecode.com/svn/trunk/releases/"}
-    :dependencies [[joodo ~(:joodo-version config)]
+    :dependencies [[org.clojure/clojure "1.5.1"]
+                   ;;[joodo ~(:joodo-version config)]
+                   [ring/ring-jetty-adapter "1.1.7"]
+                   [chee "1.1.2"]
                    [com.google.appengine/appengine-api-1.0-sdk ~(:gae-version config)]]
     :profiles {:dev {:dependencies ~dev-deps}}
     :plugins ~dev-deps
-    :test-path "spec/"
     :test-paths ["spec/"]
-    :java-source-path "src/"
-    :java-source-paths ["src/"]
-    ))
+    )
+  )

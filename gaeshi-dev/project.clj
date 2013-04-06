@@ -27,8 +27,6 @@
                    [filecabinet "1.0.4"]]
     :profiles {:dev {:dependencies ~dev-deps}}
     :plugins ~dev-deps
-    :test-path "spec/"
     :test-paths ["spec/"]
-    :java-source-path "src/"
     :java-source-paths ["src/"]
     ))
